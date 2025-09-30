@@ -1,0 +1,2 @@
+streamlit>=1.0
+rxn4chemistry>=0.2.4
