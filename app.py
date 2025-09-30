@@ -7,7 +7,7 @@ API_KEY = st.secrets["ibm_rxn_api_key"]
 # Initialize IBM RXN wrapper with API key
 rxn_wrapper = RXN4ChemistryWrapper(api_key=API_KEY)
 
-st.title("IBM RXN Chemistry Protocol Extractor")
+st.title("Chemistry Protocol Extractor")
 
 st.write("Paste your chemical reaction procedure text below:")
 
@@ -29,3 +29,4 @@ if st.button("Extract Protocol Steps"):
                     st.info("No protocol steps extracted. Please verify the input format.")
             except Exception as e:
                 st.error(f"Error calling IBM RXN API: {e}")
+
